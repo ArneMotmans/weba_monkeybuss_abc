@@ -1,0 +1,7 @@
+.vs
+.sln
+/GitIgnoreTest/bin
+/GitIgnoreTest/obj
+/GitIgnoreTest/Properties
+/GitIgnoreTest/*.config
+/GitIgnoreTest/*.csproj
