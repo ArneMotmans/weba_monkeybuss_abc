@@ -11,9 +11,9 @@
 
 [SRS Monkey Business](https://github.com/ArneMotmans/weba_monkeybuss_abc/blob/master/Resources/Monkey%20Business%20-%20SRS%20-%20EFGH07.pdf)
 
-### Tasks:
+### Week 1 : Tasks
 - [X] Create database
-- [ ] Create test data in database
+- [X] Create test data in database
 - [ ] Create controller
 - [ ] Create GET/PUT/POST functions
 - [ ] Test functions
