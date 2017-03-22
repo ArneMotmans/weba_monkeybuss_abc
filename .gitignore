@@ -1,7 +1,7 @@
 .vs
 *.sln
-/bin
-/obj
-/Properties
+/bin/*
+/obj/*
+/Properties/*
 *.config
 *.csproj
