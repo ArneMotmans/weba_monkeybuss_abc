@@ -10,3 +10,10 @@
 [Opgave project](https://github.com/ArneMotmans/weba_monkeybuss_abc/blob/master/Resources/ProjectWebAdvanced-WP1.pdf)
 
 [SRS Monkey Business](https://github.com/ArneMotmans/weba_monkeybuss_abc/blob/master/Resources/Monkey%20Business%20-%20SRS%20-%20EFGH07.pdf)
+
+### Tasks:
+- [] Create database
+- [] Create test data in database
+- [] Create controller
+- [] Create GET/PUT/POST functions
+- [] Test functions
