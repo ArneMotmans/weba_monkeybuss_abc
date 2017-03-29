@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="../CSS/form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="header">
+        <img src="../Images/MONKEY_BUSINESS_LOGO.jpg">
+</div>
+
+<div>
+    <form action="../PHP/AddEvent.php" method="get">
+
+        <label>Vooraam</label>
+        <input type="text" name="voornaam" id="voornaam" placeholder="Je voornaam..">
+
+        <label>Achternaam</label>
+        <input type="text" name="achternaam" id="achternaam" placeholder="Je Achternaam..">
+
+        <label>Eventnaam</label>
+        <input type="text" name="eventnaam" id="eventnaam" placeholder="De eventnaam..">
+
+        <label>Startdatum</label>
+        <input type="date" class="date" name="startdatum" id="startdatum" placeholder="Startdatum event..">
+
+        <label>Einddatum</label>
+        <input type="date" class="date" name="einddatum" id="einddatum" placeholder="Einddatum event..">
+
+        <input type="submit" content="submit">
+
+    </form>
+</div>
+
+</body>
+</html>
