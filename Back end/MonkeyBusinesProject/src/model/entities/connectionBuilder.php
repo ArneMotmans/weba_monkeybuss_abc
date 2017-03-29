@@ -6,12 +6,13 @@
  * Time: 10:16
  */
 
-namespace model\repositories;
+namespace model\entities;
 
 class connectionBuilder
 {
     public static function build(){
         $db = new \PDO("mysql:host=localhost;dbname=Monkey_Business", "user", "user");
+        $db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         return $db;
     }
 

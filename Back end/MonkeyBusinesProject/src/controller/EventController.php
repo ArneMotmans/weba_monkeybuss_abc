@@ -1,63 +1,62 @@
-<?php
+<?php namespace controller;
 
-namespace controller;
+use model\repositories\eventRepository;
+use view\eventView;
 
-use model\EventRepository;
-use view\View;
-
-class EventController
+class eventController
 {
-    private $eventRepository;
+    private $repository;
     private $view;
 
-    public function __construct(EventRepository $eventRepository, View $view)
+    public function __construct(eventRepository $repository, eventView $view)
     {
-        $this->eventRepository = $eventRepository;
-        $this->view = view;
+        $this->repository = $repository;
+        $this->view = $view;
     }
 
-    public function handleGetAll()
-    {
-        $events = $this->eventRepository->getAll();
-        $this->view->show(['events' => $events]);
+    public function handleGetAll(){
+        $events = $this->repository->getAll();
+        foreach ($events as &$event){
+            $this->view->show(['event' => $event]);
+        }
     }
 
-    public function handleGetOpAfspraak($eventId)
-    {
-        $event = $this->eventRepository->getOpAfspraak($eventId);
+    public function handleGetById($id){
+        $event = $this->repository->getById($id);
         $this->view->show(['event' => $event]);
     }
 
-    public function handleGetOpPersoon($personId)
+    public function handleGetByPersonId($personId)
     {
         $events = $this->eventRepository->getOpPersoon($personId);
         $this->view->show(['events' => $events]);
     }
 
-    public function handleGetOpDatum($from, $until)
+    public function handleGetByDate($from, $until)
     {
         $events = $this->eventRepository->getOpDatum($from, $until);
         $this->view->show(['events' => $events]);
     }
 
-    public function handleGetOpDatumEnPersoon($personId, $from, $until)
+    public function handleGetByDateAndPersonId($personId, $from, $until)
     {
         $events = $this->eventRepository->getOpDatumEnPersoon($personId, $from, $until);
         $this->view->show(['events' => $events]);
     }
 
-    public function handleCreateEvent($event)
+    public function handleAdd($event)
     {
         $this->eventRepository->createEvent($event);
     }
 
-    public function handleUpdateEvent($eventId, $event)
+    public function handleUpdate($eventId, $event)
     {
         $this->eventRepository->updateEvent($eventId, $event);
     }
 
-    public function handleDeleteEvent($eventId)
+    public function handleDelete($eventId)
     {
         $this->eventRepository->deleteEvent($eventId);
     }
+
 }

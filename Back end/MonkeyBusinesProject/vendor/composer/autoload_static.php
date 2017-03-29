@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitce15834173b6e2ac9c58f601fa20838f
 {
     public static $prefixLengthsPsr4 = array (
+        'v' => 
+        array (
+            'view\\' => 5,
+        ),
         'm' => 
         array (
             'model\\' => 6,
@@ -18,6 +22,10 @@ class ComposerStaticInitce15834173b6e2ac9c58f601fa20838f
     );
 
     public static $prefixDirsPsr4 = array (
+        'view\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/view',
+        ),
         'model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/model',
@@ -31,7 +39,12 @@ class ComposerStaticInitce15834173b6e2ac9c58f601fa20838f
     public static $classMap = array (
         'controller\\eventController' => __DIR__ . '/../..' . '/src/controller/eventController.php',
         'model\\entities\\Event' => __DIR__ . '/../..' . '/src/model/entities/event.php',
-        'model\\repositories\\IEventRepository' => __DIR__ . '/../..' . '/src/model/repositories/IEventRepository.php',
+        'model\\entities\\connectionBuilder' => __DIR__ . '/../..' . '/src/model/entities/connectionBuilder.php',
+        'model\\entities\\eventException' => __DIR__ . '/../..' . '/src/model/entities/eventException.php',
+        'model\\repositories\\IDbRepository' => __DIR__ . '/../..' . '/src/model/repositories/IDbRepository.php',
+        'model\\repositories\\dateConverter' => __DIR__ . '/../..' . '/src/model/repositories/dateConverter.php',
+        'model\\repositories\\eventRepository' => __DIR__ . '/../..' . '/src/model/repositories/eventRepository.php',
+        'view\\eventView' => __DIR__ . '/../..' . '/src/view/eventView.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

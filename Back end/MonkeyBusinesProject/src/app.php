@@ -3,16 +3,18 @@
 require_once "../vendor/autoload.php";
 use model\repositories\eventRepository;
 use \model\entities\Event;
+use model\entities\connectionBuilder;
+use view\eventView;
+use controller\eventController;
 
-$event = new Event();
-$event->setName("I Love Techno");
-$event->setStartDate('16-12-2017');
-$event->setEndDate('16-12-2017');
-$event->setPersonId(856);
 
-$repository = new eventRepository();
 try {
-    $repository->add($event);
-} catch (\model\entities\eventException $ex){
+    $repository = new eventRepository(connectionBuilder::build());
+    $view = new eventView();
+    $controller = new eventController($repository,$view);
+
+    $id = isset($_GET['id']) ? $_GET['id'] : null;
+    $controller->handleGetById($id);
+} catch (Exception $ex){
     echo $ex->getMessage();
 }

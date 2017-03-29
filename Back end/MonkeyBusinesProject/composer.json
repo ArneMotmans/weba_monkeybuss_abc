@@ -2,7 +2,9 @@
   "autoload":{
     "psr-4":{
       "model\\": "src/model",
-      "controller\\": "src/controller"
+      "controller\\": "src/controller",
+      "view\\": "src/view",
+      "test\\": "test"
     }
   },
   "require": {

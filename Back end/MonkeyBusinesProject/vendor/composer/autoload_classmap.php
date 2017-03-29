@@ -8,5 +8,10 @@ $baseDir = dirname($vendorDir);
 return array(
     'controller\\eventController' => $baseDir . '/src/controller/eventController.php',
     'model\\entities\\Event' => $baseDir . '/src/model/entities/event.php',
-    'model\\repositories\\IEventRepository' => $baseDir . '/src/model/repositories/IEventRepository.php',
+    'model\\entities\\connectionBuilder' => $baseDir . '/src/model/entities/connectionBuilder.php',
+    'model\\entities\\eventException' => $baseDir . '/src/model/entities/eventException.php',
+    'model\\repositories\\IDbRepository' => $baseDir . '/src/model/repositories/IDbRepository.php',
+    'model\\repositories\\dateConverter' => $baseDir . '/src/model/repositories/dateConverter.php',
+    'model\\repositories\\eventRepository' => $baseDir . '/src/model/repositories/eventRepository.php',
+    'view\\eventView' => $baseDir . '/src/view/eventView.php',
 );

@@ -3,7 +3,7 @@
 class Event
 {
     private $eventId;
-    private $name;
+    private $eventName;
     private $start_date;
     private $end_date;
     private $personId;
@@ -22,22 +22,6 @@ class Event
     public function setEventId($eventId)
     {
         $this->eventId = $eventId;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param mixed $name
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
     }
 
     /**
@@ -86,5 +70,21 @@ class Event
     public function setPersonId($personId)
     {
         $this->personId = $personId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEventName()
+    {
+        return $this->eventName;
+    }
+
+    /**
+     * @param mixed $eventName
+     */
+    public function setEventName($eventName)
+    {
+        $this->eventName = $eventName;
     }
 }
