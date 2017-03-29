@@ -56,7 +56,7 @@ class EventController
         $this->eventRepository->updateEvent($eventId, $event);
     }
 
-    public function handleDelete_Event($eventId)
+    public function handleDeleteEvent($eventId)
     {
         $this->eventRepository->deleteEvent($eventId);
     }
