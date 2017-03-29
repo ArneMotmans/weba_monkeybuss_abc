@@ -19,13 +19,13 @@ class EventController
     public function handleGetAll()
     {
         $events = $this->eventRepository->getAll();
-        $this->view->show(['event' => $events]);
+        $this->view->show(['events' => $events]);
     }
 
     public function handleGetOpAfspraak($eventId)
     {
         $event = $this->eventRepository->getOpAfspraak($eventId);
-        $this->view->show(['event' => $events]);
+        $this->view->show(['event' => $event]);
     }
 
     public function handleGetOpPersoon($personId)
