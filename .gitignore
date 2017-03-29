@@ -1,7 +1,1 @@
-/GitIgnoreTest/.vs
-/GitIgnoreTest/*.sln
-/GitIgnoreTest/GitIgnoreTest/bin
-/GitIgnoreTest/GitIgnoreTest/obj
-/GitIgnoreTest/GitIgnoreTest/Properties
-/GitIgnoreTest/GitIgnoreTest/*.config
-/GitIgnoreTest/GitIgnoreTest/*.csproj
+/Front end/MonkeyBusinessProject/.idea/workspace.xml
