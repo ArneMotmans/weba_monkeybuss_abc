@@ -1,0 +1,71 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: saddlebrown;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.logo, img {
+    width: 50%;
+    height: 100%;
+}
+.content {
+    width: 100%;
+    height: 90%;
+    background-color: lightgrey;
+}
+
+.dataTable {
+    width: 80%;
+    height: 50%;
+    margin-right: 2%;
+    float: right;
+    margin-top: 1%;
+    background-color: lightcyan;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.buttonContainer {
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.button {
+    background-color: saddlebrown;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10%;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+
+
+
