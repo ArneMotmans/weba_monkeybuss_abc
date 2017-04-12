@@ -10,6 +10,8 @@
     *   DB_DATABASE=laravel
     *   DB_USERNAME=user
     *   DB_PASSWORD=user
+*  Ga met een opdrachtprompt naar het project en voer volgend commando uit 'php artisan mirgate' om de db te maken
+*  Voer volgende commando uit 'php artisan db:seed' om de db te seeden
 
 ## XAMPP
 *   Om het project te kunnen runnen moet je XAMPP server (Apache) runnen.
