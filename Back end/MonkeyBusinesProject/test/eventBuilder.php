@@ -18,9 +18,9 @@ class eventBuilder
     }
     public function build(){
         $this->event->setEventName(uniqid());
-        $this->event->setStartDate(date());
-        $this->event->setEndDate(date());
-        $this->event->setPersonId(rand());
+        $this->event->setStartDate(date(rand(1,PHP_INT_MAX)));
+        $this->event->setEndDate(date(rand(1,PHP_INT_MAX)));
+        $this->event->setPersonId(rand(1,100));
         return $this->event;
     }
     public function withId(){
