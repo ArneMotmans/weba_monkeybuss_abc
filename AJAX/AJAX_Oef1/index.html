@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="images">
+    <div >
+        <img src="Images/Tesla.jpg" id="tesla">
+        <p id="teslaDescription"></p>
+    </div>
+    <div >
+        <img src="Images/1080Ti.jpg" id="1080">
+        <p id="1080Description"></p>
+    </div>
+    <div >
+        <img src="Images/Andromeda.jpg" id="andromeda">
+        <p id="andromedaDescription"></p>
+    </div>
+</div>
+<script>
+    function windowLoaded() {
+
+        assignEventListener('tesla', "mouseover", function () {
+            readDescription("Tesla.txt", 'teslaDescription')
+        });
+        assignEventListener('1080', "mouseover", function () {
+            readDescription("1080Ti.txt", '1080Description')
+        });
+        assignEventListener('andromeda', "mouseover", function () {
+            readDescription("Andromeda.txt", 'andromedaDescription')
+        });
+        assignEventListener('tesla', "mouseout", function () {
+            document.getElementById("teslaDescription").innerHTML = "";
+        });
+        assignEventListener('1080', "mouseout", function () {
+            document.getElementById("1080Description").innerHTML = "";
+        });
+        assignEventListener('andromeda', "mouseout", function () {
+            document.getElementById("andromedaDescription").innerHTML = "";
+        });
+    }
+
+    function readDescription(descriptionFileName, elementToWriteId) {
+        var path = 'http://localhost:3307/JavaScript/AJAX_Oef1/Descriptions/'+descriptionFileName;
+        fetch(path,{
+            method: 'GET'
+        })
+            .then(function (response) {
+            document.getElementById(elementToWriteId).innerHTML = response.url;
+            console.log(response);
+        })
+
+    }
+
+    function assignEventListener(elementId, event, functionToExecute){
+        document.getElementById(elementId).addEventListener(event, functionToExecute);
+    }
+
+    window.onload(windowLoaded());
+</script>
+</body>
+</html>
