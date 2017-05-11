@@ -2,11 +2,11 @@
 
 class Event
 {
-    private $eventId;
-    private $eventName;
-    private $start_date;
-    private $end_date;
-    private $personId;
+    public $eventId;
+    public $eventName;
+    public $start_date;
+    public $end_date;
+    public $personId;
 
     /**
      * @return mixed

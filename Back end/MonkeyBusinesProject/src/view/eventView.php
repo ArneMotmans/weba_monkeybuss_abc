@@ -2,16 +2,12 @@
 
 class eventView implements IView
 {
-    public function show(array $data)
+    public function show($data)
     {
         header ('Content-Type: application/json');
 
-        if (isset($data['event'])){
-            $event = $data['event'];
-            echo json_encode(['event_id' => $event->getEventId()
-                , 'event_name' => $event->getEventName(),
-                'start_date' => $event->getStartDate(), 'end_date' => $event->getEndDate(),
-                'person_id' => $event->getPersonId()]);
+        if (isset($data['events'])){
+            echo json_encode($data['events']);
         } else {
             echo '{}';
         }

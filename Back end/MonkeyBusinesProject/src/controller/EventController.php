@@ -15,10 +15,10 @@ class eventController
     }
 
     public function handleGetAll(){
+
         $events = $this->eventRepository->getAll();
-        foreach ($events as &$event){
-            $this->view->show(['event' => $event]);
-        }
+        
+        $this->view->show(['events' => $events]);
     }
 
     public function handleGetById($id){

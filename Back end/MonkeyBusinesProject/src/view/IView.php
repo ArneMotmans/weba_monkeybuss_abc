@@ -3,5 +3,5 @@
 
 interface IView
 {
-    public function show(array $data);
+    public function show($data);
 }
