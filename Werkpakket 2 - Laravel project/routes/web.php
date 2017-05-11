@@ -25,6 +25,19 @@ Route::group(['prefix' => 'person'], function (){
     Route::get('delete/{id}', 'PersonController@getPersonDelete')->name('delete');
 });
 
+Route::get('klanten','KlantController@getKlantAll')->name('welcomeKlanten');
+
+Route::group(['prefix' => 'klant'], function (){
+    Route::get('createKlanten', 'KlantController@getKlantAdd')->name('createKlanten');
+
+    Route::post('createKlanten', 'KlantController@postKlantAdd')->name('createKlanten');
+
+    Route::get('editKlanten/{id}', 'KlantController@getKlantEdit')->name('editKlanten');
+
+    Route::post('editKlanten', 'KlantController@putKlantEdit')->name('putKlanten'); //put geeft 'MethodNotAllowed'
+
+    Route::get('deleteKlanten/{id}', 'KlantController@getKlantDelete')->name('deleteKlanten');
+});
 
 
 Auth::routes();
