@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Opdrachten</title>
     <link rel="stylesheet" type="text/css" href="../CSS/opdrachten_main.css">
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/dataFunctions.js"></script>
 </head>
 <body>
 <div class="page">
@@ -18,7 +21,7 @@
                 <button onclick="window.location.href='form.html'" class="button">Toevoegen</button>
             </div>
             <div>
-                <button class="button">Verwijderen</button>
+                <button class="button" onclick="addDataToTable()">Verwijderen</button>
             </div>
         </div>
         <table class="dataTable">
@@ -30,34 +33,7 @@
             <th>Person ID</th>
             </thead>
             <tbody>
-            <tr>
-                <td></td>
-                <td>Rock Werchter</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Rock Werchter</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Rock Werchter</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Rock Werchter</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+
             </tbody>
         </table>
     </div>
