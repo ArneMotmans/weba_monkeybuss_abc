@@ -18,7 +18,7 @@ class eventController
 
         $events = $this->eventRepository->getAll();
         
-        $this->view->show(['events' => $events]);
+        $this->view->show(['event' => $events]);
     }
 
     public function handleGetById($id){

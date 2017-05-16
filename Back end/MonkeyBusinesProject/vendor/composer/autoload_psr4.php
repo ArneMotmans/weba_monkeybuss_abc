@@ -7,6 +7,12 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'view\\' => array($baseDir . '/src/view'),
+    'test\\' => array($baseDir . '/test'),
+    'routing\\' => array($vendorDir . '/altorouter'),
+    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/type-resolver/src', $vendorDir . '/phpdocumentor/reflection-docblock/src'),
     'model\\' => array($baseDir . '/src/model'),
     'controller\\' => array($baseDir . '/src/controller'),
+    'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
+    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
+    'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );
