@@ -13,6 +13,9 @@ try {
     $view = new eventView();
     $controller = new eventController($repository,$view);
 
+    error_reporting(E_ALL);
+    ini_set("display_errors", "On");
+
     $controller->handleGetAll();
 } catch (Exception $ex){
     echo $ex->getMessage();
