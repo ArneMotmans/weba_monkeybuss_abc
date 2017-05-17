@@ -1,9 +1,9 @@
 /**
  * Created by 11502064 on 12/05/2017.
  */
-window.onload = addDataToTable();
+window.onload = addAllDataToTable();
 
-function addDataToTable() {
+function addAllDataToTable() {
     fetch('http://192.168.47.134/~user/Monkey_Business/events', {
         method: 'get',
     }).then(function (response) {
@@ -22,11 +22,19 @@ function addDataToTable() {
 
             cel_1.id = "idCel";
 
+            var personID_Link = document.createElement("A");
+            personID_Link.id = "personIdCel" + i;
+            personID_Link.setAttribute("onclick", "addDataToTableBasedOnPersonId()");
+            personID_Link.style.cursor = "pointer";
+            personID_Link.style.textDecoration = "none";
+            personID_Link.style.color = "black";
+            personID_Link.append(content[i].personId);
+
             cel_1.append(content[i].eventId);
             cel_2.append(content[i].eventName);
             cel_3.append(content[i].start_date);
             cel_4.append(content[i].end_date);
-            cel_5.append(content[i].personId);
+            cel_5.append(personID_Link);
 
             row.appendChild(cel_1);
             row.appendChild(cel_2);
@@ -40,12 +48,15 @@ function addDataToTable() {
     })
 }
 
-function deleteDataFromTable() {
-    fetch('http://192.168.47.134/~user/Monkey_Business/events/' + document.getElementById("idCel").innerHTML, {
-        method: 'delete'
+function addDataToTableBasedOnPersonId() {
+    var persId = this.content;
+
+    fetch('http://192.168.47.134/~user/Monkey_Business/events', {
+        method: 'post',
+        body: JSON.stringify({personId: persId})
+    }).then(function (response) {
+        return response.json();
+    }).then(function (response) {
+        console.log(response);
     })
-
-    document.getElementById("dataTableContent").innerHTML = "";
-
-    addDataToTable();
 }
