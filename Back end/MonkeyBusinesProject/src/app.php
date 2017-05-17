@@ -10,6 +10,7 @@ use model\entities\connectionBuilder;
 use view\eventView;
 use controller\eventController;
 use routing\AltoRouter;
+use model\entities\eventParser;
 
 
 try {
@@ -26,6 +27,13 @@ try {
 
     $router->map('GET','events/[i:id]', function ($id) use ($controller){
         $controller->handleGetById($id);
+    });
+
+    $router->map('POST', 'events', function () use ($controller) {
+        $data = json_decode(file_get_contents('php://input'));
+        $data = (array)$data;
+        $event = eventParser::parseEvent($data);
+        $controller->handleAdd($event);
     });
 
     $match = $router->match();
