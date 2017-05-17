@@ -3,7 +3,7 @@
  */
 
 function addDataToTable() {
-    fetch('http://192.168.47.134/~user/Monkey_Business/src/get.php', {
+    fetch('http://192.168.47.134/~user/Monkey_Business/events', {
         method: 'get',
         dataType: 'json',
     }).then(function (response) {
