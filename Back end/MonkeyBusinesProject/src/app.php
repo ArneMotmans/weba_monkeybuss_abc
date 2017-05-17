@@ -21,6 +21,10 @@ try {
 
     $router->setBasePath("/~user/Monkey_Business/");
 
+    $router->map('GET', 'events', function () use ($controller){
+        $controller->handleGetAll();
+    });
+
     $router->map('POST','events', function () use ($controller){ //GET mag geen body 
         $data = json_decode(file_get_contents('php://input'));
         $data = (array)$data;
@@ -33,8 +37,6 @@ try {
         } else {
             if (isset($data['start_date']) && isset($data['end_date'])) {
                 $controller->handleGetByDate($data['start_date'], $data['end_date']);
-            } else {
-                $controller->handleGetAll();
             }
         }
     });

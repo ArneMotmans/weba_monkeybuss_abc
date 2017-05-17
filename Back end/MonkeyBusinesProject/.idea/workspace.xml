@@ -24,8 +24,8 @@
           <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="23" column="85" lean-forward="false" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+                <state relative-caret-position="204">
+                  <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
                   <folding>
                     <element signature="e#108#147#0#PHP" expanded="true" />
                   </folding>
@@ -329,7 +329,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/School/2e Jaar/Semester 2/Web Advanced/Oefeningen/WebSockets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Front end/MonkeyBusinessProject" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.10.3" />
@@ -566,12 +566,12 @@
       <workItem from="1494919877130" duration="617000" />
       <workItem from="1494921827840" duration="2549000" />
       <workItem from="1495004174160" duration="5244000" />
-      <workItem from="1495010633740" duration="2963000" />
+      <workItem from="1495010633740" duration="3498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51523000" />
+    <option name="totallyTimeSpent" value="52058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -929,8 +929,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="85" lean-forward="false" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+        <state relative-caret-position="204">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding>
             <element signature="e#108#147#0#PHP" expanded="true" />
           </folding>
