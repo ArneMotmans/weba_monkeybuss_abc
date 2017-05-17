@@ -4,38 +4,31 @@
     <meta charset="UTF-8">
     <title>Form</title>
     <link href="../CSS/form.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <div class="header">
-    <a href="opdrachten_main.html">
-        <img src="../Images/MONKEY_BUSINESS_LOGO.jpg">
-    </a>
-
+    <img src="../Images/MonkeyBusinessHeaderBrown.jpg">
 </div>
 
 <div>
-    <form action="../PHP/AddEvent.php" method="get">
 
-        <label>Vooraam</label>
-        <input type="text" name="voornaam" id="voornaam" placeholder="Je voornaam..">
+    <label>Eventnaam</label>
+    <input type="text" name="eventnaam" id="eventnaam" placeholder="De Eventnaam..">
 
-        <label>Achternaam</label>
-        <input type="text" name="achternaam" id="achternaam" placeholder="Je Achternaam..">
+    <label>Startdatum</label>
+    <input type="date" class="date" name="startdatum" id="startdatum" placeholder="Startdatum event..">
 
-        <label>Eventnaam</label>
-        <input type="text" name="eventnaam" id="eventnaam" placeholder="De eventnaam..">
+    <label>Einddatum</label>
+    <input type="date" class="date" name="einddatum" id="einddatum" placeholder="Einddatum event..">
 
-        <label>Startdatum</label>
-        <input type="date" class="date" name="startdatum" id="startdatum" placeholder="Startdatum event..">
+    <input type="button" name="submit" id="submit" value="verzenden">
 
-        <label>Einddatum</label>
-        <input type="date" class="date" name="einddatum" id="einddatum" placeholder="Einddatum event..">
-
-        <input type="submit" content="submit">
-
-    </form>
 </div>
+
+<script SRC="../Scripts/script.js"></script>
+
 
 </body>
 </html>
