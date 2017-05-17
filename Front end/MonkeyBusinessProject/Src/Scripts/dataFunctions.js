@@ -1,37 +1,51 @@
 /**
  * Created by 11502064 on 12/05/2017.
  */
+window.onload = addDataToTable();
 
 function addDataToTable() {
     fetch('http://192.168.47.134/~user/Monkey_Business/events', {
         method: 'get',
-        dataType: 'json',
     }).then(function (response) {
-        var data = JSON.stringify(response);
-        var target = document.getElementById("dataTableContent");
+        return response.json();
 
-        var row = document.createElement("TR");
-        var cel_1 = document.createElement("TD");
-        var cel_2 = document.createElement("TD");
-        var cel_3 = document.createElement("TD");
-        var cel_4 = document.createElement("TD");
-        var cel_5 = document.createElement("TD");
+    }).then(function (content) {
+        for(var i = 0; i < 4; i++){
+            var target = document.getElementById("dataTableContent");
 
-        cel_1.append(response[0]);
-        cel_2.append(response[1]);
-        cel_3.append(response[2]);
-        cel_4.append(response[3]);
-        cel_5.append(response[4]);
+            var row = document.createElement("TR");
+            var cel_1 = document.createElement("TD");
+            var cel_2 = document.createElement("TD");
+            var cel_3 = document.createElement("TD");
+            var cel_4 = document.createElement("TD");
+            var cel_5 = document.createElement("TD");
 
-        row.appendChild(cel_1);
-        row.appendChild(cel_2);
-        row.appendChild(cel_3);
-        row.appendChild(cel_4);
-        row.appendChild(cel_5);
+            cel_1.id = "idCel";
 
-        target.append(row);
+            cel_1.append(content[i].eventId);
+            cel_2.append(content[i].eventName);
+            cel_3.append(content[i].start_date);
+            cel_4.append(content[i].end_date);
+            cel_5.append(content[i].personId);
 
-        alert(response);
-        console.log('success', data);
+            row.appendChild(cel_1);
+            row.appendChild(cel_2);
+            row.appendChild(cel_3);
+            row.appendChild(cel_4);
+            row.appendChild(cel_5);
+
+            target.append(row);
+        }
+
     })
+}
+
+function deleteDataFromTable() {
+    fetch('http://192.168.47.134/~user/Monkey_Business/events/' + document.getElementById("idCel").innerHTML, {
+        method: 'delete'
+    })
+
+    document.getElementById("dataTableContent").innerHTML = "";
+
+    addDataToTable();
 }
