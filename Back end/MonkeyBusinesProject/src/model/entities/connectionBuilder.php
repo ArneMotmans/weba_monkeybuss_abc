@@ -11,7 +11,7 @@ namespace model\entities;
 class connectionBuilder
 {
     public static function build(){
-        $db = new \PDO("mysql:host=192.168.241.140;dbname=Monkey_Business", "user", "user");
+        $db = new \PDO("mysql:host=localhost;dbname=Monkey_Business", "root", "");
         $db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         return $db;
     }

@@ -3,11 +3,13 @@
  */
 
 function addDataToTable() {
-    fetch('http://192.168.47.134/~user/Monkey_Business/src/get.php', {
+    fetch('http://192.168.47.134/~user/Monkey_Business/events', {
         method: 'get',
         dataType: 'json',
     }).then(function (response) {
         var data = JSON.stringify(response);
+        var target = document.getElementById("dataTableContent");
+
         var row = document.createElement("TR");
         var cel_1 = document.createElement("TD");
         var cel_2 = document.createElement("TD");
@@ -27,7 +29,7 @@ function addDataToTable() {
         row.appendChild(cel_4);
         row.appendChild(cel_5);
 
-        document.getElementById("dataTable").appendChild(row);
+        target.append(row);
 
         alert(response);
         console.log('success', data);
