@@ -15,7 +15,7 @@ class eventParser
     static function parseEvent($array){
         $event = new Event();
         $event->setEventName($array['event_name']);
-        $event->setPersonId($array['personId']);
+        $event->setPersonId($array['person_id']);
         $event->setStartDate($array['start_date']);
         $event->setEndDate($array['end_date']);
         return $event;
