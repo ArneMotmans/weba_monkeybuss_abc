@@ -4,13 +4,13 @@
 window.onload = addAllDataToTable();
 
 function addAllDataToTable() {
-    fetch('http://192.168.47.134/~user/Monkey_Business/events', {
+    fetch('http://192.168.241.140/~user/Monkey_Business/events', {
         method: 'get',
     }).then(function (response) {
         return response.json();
 
     }).then(function (content) {
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; Object.keys(content).length; i++){
             var target = document.getElementById("dataTableContent");
 
             var row = document.createElement("TR");
