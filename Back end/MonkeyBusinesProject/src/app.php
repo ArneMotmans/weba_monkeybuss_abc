@@ -45,7 +45,7 @@ try {
         $controller->handleGetById($id);
     });
 
-    $router->map('POST', 'events', function () use ($controller) {
+    $router->map('POST', 'events/add', function () use ($controller) {
         $data = json_decode(file_get_contents('php://input'));
         $data = (array)$data;
         $event = eventParser::parseEvent($data);
