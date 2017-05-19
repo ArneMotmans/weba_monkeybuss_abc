@@ -4,11 +4,13 @@
 window.addEventListener('load', windowLoaded);
 
 function checkIfValid(value) {
-    for (var i = 0; i < value.length; i++) {
-        if (value[i] === "")
-            return false;
-    }
-    return true;
+    var valid = true;
+    Object.keys(value).forEach(function (key) {
+        if (value[key] === "" || value[key] == null)
+            valid = false;
+
+    });
+    return valid;
 }
 
 function windowLoaded() {
@@ -18,7 +20,7 @@ function windowLoaded() {
         $credentials['start_date'] = document.getElementById('startdatum').value;
         $credentials['end_date'] = document.getElementById('einddatum').value;
         $credentials['person_id'] = String(Math.floor((Math.random() * 999) + 1));
-        alert($credentials.length);
+
         if (checkIfValid($credentials)) {
             addToDatabase($credentials);
         } else {
