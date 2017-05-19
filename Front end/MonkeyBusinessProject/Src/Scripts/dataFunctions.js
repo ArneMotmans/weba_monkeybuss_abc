@@ -31,7 +31,7 @@ function addAllDataToTable() {
             personID_Link.append(content[i].personId);
 
             cel_1.append(content[i].eventId);
-            cel_2.append(content[i].eventName);
+            cel_2.append(content[i].event_name);
             cel_3.append(content[i].start_date);
             cel_4.append(content[i].end_date);
             cel_5.append(personID_Link);

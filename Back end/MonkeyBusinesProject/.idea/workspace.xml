@@ -46,9 +46,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="17">
                   <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="9" selection-end-column="4" />
-                  <folding>
-                    <marker date="1495010552544" expanded="true" signature="15:292" ph="{...}" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -77,10 +75,10 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="EventController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/controller/EventController.php">
+          <file leaf-file-name="eventController.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/controller/eventController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
+                <state relative-caret-position="323">
                   <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
                   <folding />
                 </state>
@@ -91,17 +89,16 @@
             <entry file="file://$PROJECT_DIR$/src/model/repositories/eventRepository.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="88">
-                  <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+                  <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
                   <folding>
-                    <marker date="1495012504810" expanded="true" signature="496:516" ph="SELECT * FRO... events" />
-                    <marker date="1495012504810" expanded="true" signature="945:985" ph="SELECT * FRO... events" />
-                    <marker date="1495012504810" expanded="true" signature="1409:1450" ph="SELECT * FRO... events" />
-                    <marker date="1495012504810" expanded="true" signature="1892:1942" ph="SELECT * FRO... events" />
-                    <marker date="1495012504810" expanded="true" signature="1892:1966" ph="SELECT * FRO... events" />
-                    <marker date="1495012504810" expanded="true" signature="2594:2687" ph="SELECT * FRO... events" />
-                    <marker date="1495012504810" expanded="true" signature="3322:3439" ph="INSERT INTO events... " />
-                    <marker date="1495012504810" expanded="true" signature="4159:4289" ph="UPDATE event... " />
-                    <marker date="1495012504810" expanded="true" signature="5051:5089" ph="DELETE FROM " />
+                    <marker date="1494668898621" expanded="true" signature="496:516" ph="SELECT * FRO... events" />
+                    <marker date="1494668898621" expanded="true" signature="945:985" ph="SELECT * FRO... events" />
+                    <marker date="1494668898621" expanded="true" signature="1409:1450" ph="SELECT * FRO... events" />
+                    <marker date="1494668898621" expanded="true" signature="1892:1966" ph="SELECT * FRO... events" />
+                    <marker date="1494668898621" expanded="true" signature="2594:2687" ph="SELECT * FRO... events" />
+                    <marker date="1494668898621" expanded="true" signature="3322:3439" ph="INSERT INTO events... " />
+                    <marker date="1494668898621" expanded="true" signature="4159:4289" ph="UPDATE event... " />
+                    <marker date="1494668898621" expanded="true" signature="5051:5089" ph="DELETE FROM " />
                   </folding>
                 </state>
               </provider>
@@ -214,10 +211,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -235,7 +232,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,6 +322,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,17 +460,6 @@
     <configuration default="false" name="app.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/app.php">
       <method />
     </configuration>
-    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
@@ -570,26 +556,25 @@
       <workItem from="1494921827840" duration="2549000" />
       <workItem from="1495004174160" duration="5244000" />
       <workItem from="1495010633740" duration="5037000" />
+      <workItem from="1495016504426" duration="356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53597000" />
+    <option name="totallyTimeSpent" value="53953000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12313433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.184375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13109426" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13033707" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -597,9 +582,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -650,7 +637,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/EventController.php">
+    <entry file="file://$PROJECT_DIR$/src/controller/eventController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -668,9 +655,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <marker date="1495010552544" expanded="true" signature="15:292" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +674,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/EventController.php">
+    <entry file="file://$PROJECT_DIR$/src/controller/eventController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -714,9 +699,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <marker date="1495010552544" expanded="true" signature="15:292" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -728,7 +711,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/EventController.php">
+    <entry file="file://$PROJECT_DIR$/src/controller/eventController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -753,9 +736,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <marker date="1495010552544" expanded="true" signature="15:292" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +780,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Oefeningen/PDO/Oef2/wijzig.php" />
-    <entry file="file://$PROJECT_DIR$/src/controller/EventController.php">
+    <entry file="file://$PROJECT_DIR$/src/controller/eventController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="61" column="5" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
@@ -847,9 +828,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <marker date="1495010552544" expanded="true" signature="15:292" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -903,9 +882,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/EventController.php">
+    <entry file="file://$PROJECT_DIR$/src/controller/eventController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="323">
           <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding />
         </state>
@@ -922,17 +901,16 @@
     <entry file="file://$PROJECT_DIR$/src/model/repositories/eventRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+          <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
           <folding>
-            <marker date="1495012504810" expanded="true" signature="496:516" ph="SELECT * FRO... events" />
-            <marker date="1495012504810" expanded="true" signature="945:985" ph="SELECT * FRO... events" />
-            <marker date="1495012504810" expanded="true" signature="1409:1450" ph="SELECT * FRO... events" />
-            <marker date="1495012504810" expanded="true" signature="1892:1942" ph="SELECT * FRO... events" />
-            <marker date="1495012504810" expanded="true" signature="1892:1966" ph="SELECT * FRO... events" />
-            <marker date="1495012504810" expanded="true" signature="2594:2687" ph="SELECT * FRO... events" />
-            <marker date="1495012504810" expanded="true" signature="3322:3439" ph="INSERT INTO events... " />
-            <marker date="1495012504810" expanded="true" signature="4159:4289" ph="UPDATE event... " />
-            <marker date="1495012504810" expanded="true" signature="5051:5089" ph="DELETE FROM " />
+            <marker date="1494668898621" expanded="true" signature="496:516" ph="SELECT * FRO... events" />
+            <marker date="1494668898621" expanded="true" signature="945:985" ph="SELECT * FRO... events" />
+            <marker date="1494668898621" expanded="true" signature="1409:1450" ph="SELECT * FRO... events" />
+            <marker date="1494668898621" expanded="true" signature="1892:1966" ph="SELECT * FRO... events" />
+            <marker date="1494668898621" expanded="true" signature="2594:2687" ph="SELECT * FRO... events" />
+            <marker date="1494668898621" expanded="true" signature="3322:3439" ph="INSERT INTO events... " />
+            <marker date="1494668898621" expanded="true" signature="4159:4289" ph="UPDATE event... " />
+            <marker date="1494668898621" expanded="true" signature="5051:5089" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
