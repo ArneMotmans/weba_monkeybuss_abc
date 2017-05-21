@@ -30,8 +30,10 @@ function addAllDataToTable() {
             personID_Link.style.color = "black";
             personID_Link.append(content[i].personId);
 
+            console.log(content[i]);
+
             cel_1.append(content[i].eventId);
-            cel_2.append(content[i].event_name);
+            cel_2.append(content[i].eventName);
             cel_3.append(content[i].start_date);
             cel_4.append(content[i].end_date);
             cel_5.append(personID_Link);
