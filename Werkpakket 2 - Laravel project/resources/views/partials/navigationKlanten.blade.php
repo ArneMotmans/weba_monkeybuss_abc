@@ -1,1 +1,1 @@
-<a href="{{ route('welcomeKlanten') }}">Home</a>
+<h1><a class="navbar-link" href="{{ route('welcomeKlanten') }}">Home</a></h1>

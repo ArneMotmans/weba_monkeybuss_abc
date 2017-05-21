@@ -1,8 +1,10 @@
 @extends('layouts.master')
 @section('content')
-    <h1>Alle klanten</h1>
-    <a href="{{ route('createKlanten') }}">Voeg klant toe</a>
+    <div class="text-center"><h1>Alle klanten</h1>
+    </div>
+    <div class="col-md-12">
     <table border="1" id="tabel">
+        <thead>
         <tr>
             <th>Id</th>
             <th>Voornaam</th>
@@ -19,7 +21,8 @@
             <th>Project</th>
             <th>Beheer</th>
         </tr>
-        <p></p>
+        </thead>
+    </div>
     @foreach($klanten as $klant)
             <tr>
                 <td>{{$klant->id}}</td>
@@ -36,17 +39,19 @@
                 <td>{{$klant->getekendContract}}</td>
                 <td>{{$klant->project}}</td>
                 <td>
-                    <a href="{{ route('editKlanten',$klant->id) }}">Wijzig</a>
-                    <a href="{{ route('deleteKlanten',$klant->id) }}">Verwijder</a>
+                    <a class="btn btn-info" href="{{ route('editKlanten',$klant->id) }}">Wijzig</a>
+                    <a class="btn btn-danger" href="{{ route('deleteKlanten',$klant->id) }}">Verwijder</a>
                 </td>
             </tr>
     @endforeach
     </table>
-    <script src="{{ asset('js/jquery.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/datatable.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/responsiveDatatable.js') }}" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#tabel').DataTable();
+            $('#tabel').DataTable({
+                responsive: true
+            });
         });
     </script>
 @endsection

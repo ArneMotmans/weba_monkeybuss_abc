@@ -1,59 +1,67 @@
 @extends('layouts.master')
 @section('content')
-    <h1>Wijzig Klant</h1>
-    @include('partials.navigationKlanten')
-    <p></p>
+    <h1 class="text-center">Wijzig klant</h1>
+
+    <div class="col-md-12">
     <form action="{{ route('putKlanten') }}" method="post">
-        <div>
+        <div class="col-md-6">
+        <div class="form-group">
             <label>Voornaam</label>
-            <input type="text" name="voornaam" value="{{$klant->voornaam}}">
+            <input class="form-control" type="text" name="voornaam" value="{{$klant->voornaam}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>Naam</label>
-            <input type="text" name="naam" value="{{$klant->naam}}">
+            <input class="form-control" type="text" name="naam" value="{{$klant->naam}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>Postcode</label>
-            <input type="text" name="postcode" value="{{$klant->postcode}}">
+            <input class="form-control" type="text" name="postcode" value="{{$klant->postcode}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>Gemeente</label>
-            <input type="text" name="gemeente" value="{{$klant->gemeente}}">
+            <input class="form-control" type="text" name="gemeente" value="{{$klant->gemeente}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>Straat</label>
-            <input type="text" name="straat" value="{{$klant->straat}}">
+            <input class="form-control" type="text" name="straat" value="{{$klant->straat}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>Huisnummer</label>
-            <input type="text" name="huisnummer" value="{{$klant->huisnummer}}">
+            <input class="form-control" type="text" name="huisnummer" value="{{$klant->huisnummer}}">
         </div>
-        <div>
+        </div>
+        <div class="col-md-6">
+
+            <div class="form-group">
             <label>Telefoonnummer</label>
-            <input type="text" name="telefoonnummer" value="{{$klant->telefoonnummer}}">
+            <input class="form-control" type="text" name="telefoonnummer" value="{{$klant->telefoonnummer}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>Gsm nummer</label>
-            <input type="text" name="gsmNummer" value="{{$klant->gsmNummer}}">
+            <input class="form-control" type="text" name="gsmNummer" value="{{$klant->gsmNummer}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>E-mailadres</label>
-            <input type="email" name="eMailadres" value="{{$klant->eMailadres}}">
+            <input class="form-control" type="email" name="eMailadres" value="{{$klant->eMailadres}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>Getekende Offerte</label>
-            <input type="text" name="getekendeOfferte" value="{{$klant->getekendeOfferte}}">
+            <input class="form-control" type="text" name="getekendeOfferte" value="{{$klant->getekendeOfferte}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>Getekend Contract</label>
-            <input type="text" name="getekendContract" value="{{$klant->getekendContract}}">
+            <input class="form-control" type="text" name="getekendContract" value="{{$klant->getekendContract}}">
         </div>
-        <div>
+        <div class="form-group">
             <label>Project</label>
-            <input type="text" name="project" value="{{$klant->project}}">
+            <input class="form-control" type="text" name="project" value="{{$klant->project}}">
+        </div>
         </div>
         <input type="hidden" name="id" value="{{$klant->id}}">
         {{ csrf_field() }}
-        <button type="submit">Edit</button>
+        <div class="col-md-1 col-md-offset-11">
+        <button class="btn btn-info" type="submit">Wijzigingen opslaan</button>
+        </div>
     </form>
+    </div>
 @endsection

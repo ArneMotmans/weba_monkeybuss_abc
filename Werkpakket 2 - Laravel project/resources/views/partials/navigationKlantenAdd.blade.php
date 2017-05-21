@@ -1,0 +1,1 @@
+<h1><a class="navbar-link" href="{{ route('createKlanten') }}">Voeg klant toe</a></h1>
