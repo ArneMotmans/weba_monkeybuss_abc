@@ -1,58 +1,64 @@
 @extends('layouts.master')
 @section('content')
-    <h1>Maak klant aan</h1>
-    @include('partials.navigationKlanten')
-    <p></p>
+    <h1 class="text-center">Maak klant aan</h1>
+
+    <div class="col-md-12">
     <form action="{{ route('createKlanten') }}" method="post">
-        <div>
+        <div class="col-md-6">
+        <div class="form-group">
             <label>Voornaam</label>
-            <input type="text" name="voornaam" id="voornaam">
+            <input class="form-control" type="text" name="voornaam" id="voornaam">
         </div>
-        <div>
+        <div class="form-group">
             <label>Naam</label>
-            <input type="text" name="naam" id="naam">
+            <input class="form-control" type="text" name="naam" id="naam">
         </div>
-        <div>
+        <div class="form-group">
             <label>Postcode</label>
-            <input type="text" name="postcode" id="postcode">
+            <input class="form-control" type="text" name="postcode" id="postcode">
         </div>
-        <div>
+        <div class="form-group">
             <label>Gemeente</label>
-            <input type="text" name="gemeente" id="gemeente">
+            <input class="form-control" type="text" name="gemeente" id="gemeente">
         </div>
-        <div>
+        <div class="form-group">
             <label>Straat</label>
-            <input type="text" name="straat" id="straat">
+            <input class="form-control" type="text" name="straat" id="straat">
         </div>
-        <div>
+        <div class="form-group">
             <label>Huisnummer</label>
-            <input type="text" name="huisnummer" id="huisnummer">
+            <input class="form-control" type="text" name="huisnummer" id="huisnummer">
         </div>
-        <div>
+        </div>
+        <div class="col-md-6">
+        <div class="form-group">
             <label>Telefoonnummer</label>
-            <input type="text" name="telefoonnummer" id="telefoonnummer">
+            <input class="form-control" type="text" name="telefoonnummer" id="telefoonnummer">
         </div>
-        <div>
+        <div class="form-group">
             <label>Gsm nummer</label>
-            <input type="text" name="gsmNummer" id="gsmNummer">
+            <input class="form-control" type="text" name="gsmNummer" id="gsmNummer">
         </div>
-        <div>
+        <div class="form-group">
             <label>E-mailadres</label>
-            <input type="email" name="eMailadres" id="eMailadres">
+            <input class="form-control" type="email" name="eMailadres" id="eMailadres">
         </div>
-        <div>
+        <div class="form-group">
             <label>Getekende Offerte</label>
-            <input type="text" name="getekendeOfferte" id="getekendeOfferte">
+            <input class="form-control" type="text" name="getekendeOfferte" id="getekendeOfferte">
         </div>
-        <div>
+        <div class="form-group">
             <label>Getekend Contract</label>
-            <input type="text" name="getekendContract" id="getekendContract">
+            <input class="form-control" type="text" name="getekendContract" id="getekendContract">
         </div>
-        <div>
+        <div class="form-group">
             <label>Project</label>
-            <input type="text" name="project" id="project">
+            <input class="form-control" type="text" name="project" id="project">
+        </div>
         </div>
         {{ csrf_field() }}
-        <button type="submit">Add</button>
+        <div class="col-md-1 col-md-offset-11"><button class="btn btn-success" type="submit">Opslaan</button>
+        </div>
     </form>
+    </div>
 @endsection
