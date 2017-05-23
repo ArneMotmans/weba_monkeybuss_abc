@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-static-top"> {{--navbar navbar-fixed-top navbar-inverse--}}
             <div class="container">
                 <div class="navbar-header">
 
@@ -35,7 +35,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/login') }}">
                         {{ config('app.name', 'Monkey Business') }}
                     </a>
                 </div>
@@ -78,9 +78,9 @@
             </div>
         </nav>
 
-        @yield('content')
-    </div>
 
+    </div>
+    @yield('content')
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
