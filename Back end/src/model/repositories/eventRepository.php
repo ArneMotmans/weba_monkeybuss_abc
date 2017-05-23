@@ -9,8 +9,13 @@
 namespace model\repositories;
 
 
+
 use model\entities\Event;
 use model\entities\eventException;
+
+
+error_reporting(E_ALL);
+ini_set("display_errors","On");
 
 class eventRepository implements IDbRepository
 {
@@ -52,16 +57,19 @@ class eventRepository implements IDbRepository
     }
 
     public function getByPersonId($id){
-        $event = null;
+        $result = array();
         try {
             $query = $this->connection->prepare('SELECT * FROM events WHERE personId = :id');
             $query->bindParam(':id', $id, \PDO::PARAM_INT);
             $query->execute();
-            $event = $this->parseEvent($query->fetch());
+            while ($row = $query->fetch()) {
+                $event = $this->parseEvent($row);
+                array_push($result,$this->getEventOrThrowException($event));
+            }
         } catch (\PDOException $ex){
             echo $ex->getMessage();
         }
-        return $this->getEventOrThrowException($event);
+        return $result;
     }
 
     public function getByDate($startDate, $endDate)
