@@ -1,0 +1,21 @@
+span{
+    color: blue;
+}
+
+#inputAndSubmit, #suggestionsResults{
+    display: inline-block;
+}
+
+#inputAndSubmit input, button{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#inputAndSubmit input{
+    height: 15px;
+}
+
+#suggestionsResults p, div{
+    display: inline;
+    vertical-align: top;
+}

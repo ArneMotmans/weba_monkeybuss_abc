@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdrachten</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/opdrachten_main.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div class="logo">
+            <img src="../Images/MonkeyBusinessHeaderBrown.jpg">
+        </div>
+    </div>
+    <div class="content">
+        <div class="buttonContainer">
+            <div>
+                <button onclick="window.location.href='form.html'" class="button">Toevoegen</button>
+            </div>
+            <div>
+                <button class="button" id="allEvents">Alle events</button>
+            </div>
+        </div>
+        <table class="dataTable">
+            <thead>
+            <th>ID</th>
+            <th>Event Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Person ID</th>
+            </thead>
+            <tbody id="dataTableContent">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="../Scripts/jquery-1.10.2.min.js"></script>
+<script src="../Scripts/jquery-1.10.2.js"></script>
+<script src="../Scripts/dataFunctions.js"></script>
+</body>
+</html>

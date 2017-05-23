@@ -1,0 +1,1 @@
+<a class="navbar-link" href="{{ route('welcomeKlanten') }}">Home</a>
